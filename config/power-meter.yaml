@@ -4,7 +4,7 @@ substitutions:
   project_version: "1.0.0"
   device_description: "Measure your energy consumption with the pulse LED on your smart meter"
   pulse_pin: GPIO4
-  pulse_rate: '1000' # imp/kWh rate
+  pulse_rate: '10000' # imp/kWh rate
 
 esphome:
   name: '${device_name}'
