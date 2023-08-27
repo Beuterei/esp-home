@@ -55,6 +55,8 @@ To configure secrets
 | --------------------- | ------------------------------------------------ |
 | `emergency-exit-sign` | A fancy emergency exit sign as light             |
 | `dnd-light-remote`    | A small remote to control the light mood for dnd |
+| `door-buzzer`         | Relay to control my door buzzer                  |
+| `water-tracker`       | A tracker for my daily water consumption         |
 
 <!-- MARKDOWN LINKS & IMAGES -->
 <!-- https://www.markdownguide.org/basic-syntax/#reference-style-links -->
