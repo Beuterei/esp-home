@@ -13,9 +13,9 @@
     <br />
     <br />
     ·
-    <a href="https://github.com/beuluis/esp-home/issues">Report Bug</a>
+    <a href="https://github.com/Beuterei/esp-home/issues">Report Bug</a>
     ·
-    <a href="https://github.com/beuluis/esp-home/issues">Request Feature</a>
+    <a href="https://github.com/Beuterei/esp-home/issues">Request Feature</a>
     ·
   </p>
 </p>
@@ -51,37 +51,20 @@ To configure secrets
 
 ## Projects
 
-| Name          | Description                                                            |
-| ------------- | ---------------------------------------------------------------------- |
-| `power-meter` | Measure your energy consumption with the pulse LED on your smart meter |
-
-<!-- CONTRIBUTING -->
-
-## Contributing
-
-Contributions are what make the open source community such an amazing place to learn, inspire, and create. Any contributions you make are **greatly appreciated**.
-
-1. Fork the Project
-2. Create your Feature Branch (`git checkout -b feature/AmazingFeature`)
-3. Commit your Changes (`git commit -m 'Add some AmazingFeature'`)
-4. Push to the Branch (`git push origin feature/AmazingFeature`)
-5. Open a Pull Request
-
-<!-- CONTACT -->
-
-## Contact
-
-Luis Beu - me@luisbeu.de
+| Name                  | Description                                      |
+| --------------------- | ------------------------------------------------ |
+| `emergency-exit-sign` | A fancy emergency exit sign as light             |
+| `dnd-light-remote`    | A small remote to control the light mood for dnd |
 
 <!-- MARKDOWN LINKS & IMAGES -->
 <!-- https://www.markdownguide.org/basic-syntax/#reference-style-links -->
 
-[contributors-shield]: https://img.shields.io/github/contributors/beuluis/esp-home.svg?style=flat-square
-[contributors-url]: https://github.com/beuluis/esp-home/graphs/contributors
-[forks-shield]: https://img.shields.io/github/forks/beuluis/esp-home.svg?style=flat-square
-[forks-url]: https://github.com/beuluis/esp-home/network/members
-[stars-shield]: https://img.shields.io/github/stars/beuluis/esp-home.svg?style=flat-square
-[stars-url]: https://github.com/beuluis/esp-home/stargazers
-[issues-shield]: https://img.shields.io/github/issues/beuluis/esp-home.svg?style=flat-square
-[issues-url]: https://github.com/beuluis/esp-home/issues
-[license-shield]: https://img.shields.io/github/license/beuluis/esp-home.svg?style=flat-square
+[contributors-shield]: https://img.shields.io/github/contributors/Beuterei/esp-home.svg?style=flat-square
+[contributors-url]: https://github.com/Beuterei/esp-home/graphs/contributors
+[forks-shield]: https://img.shields.io/github/forks/Beuterei/esp-home.svg?style=flat-square
+[forks-url]: https://github.com/Beuterei/esp-home/network/members
+[stars-shield]: https://img.shields.io/github/stars/Beuterei/esp-home.svg?style=flat-square
+[stars-url]: https://github.com/Beuterei/esp-home/stargazers
+[issues-shield]: https://img.shields.io/github/issues/Beuterei/esp-home.svg?style=flat-square
+[issues-url]: https://github.com/Beuterei/esp-home/issues
+[license-shield]: https://img.shields.io/github/license/Beuterei/esp-home.svg?style=flat-square
