@@ -1,9 +1,9 @@
 ---
 substitutions:
-  device_name: emergency-exit-sign
-  friendly_name: Emergency exit sign
+  device_name: bed-tracker
+  friendly_name: Bed Tracker
   project_version: 1.0.0
-  device_description: A fancy emergency exit sign
+  device_description: Bed occupancy sensor
 
 esphome:
   name: ${device_name}
@@ -13,7 +13,11 @@ esphome:
     version: ${project_version}
 
 esp32:
-  board: nodemcu-32s
+  variant: esp32c6
+  board: esp32-c6-devkitc-1
+  flash_size: 4MB
+  framework:
+    type: esp-idf
 
 wifi:
   ssid: !secret wifi_ssid
@@ -40,15 +44,11 @@ web_server:
     username: esphome
     password: !secret web_password
 
-light:
-  # - platform: fastled_clockless
-  #   chipset: NEOPIXEL
-  #   pin: GPIO19
-  #   num_leds: 64
-  #   name: ${friendly_name}
-  - platform: neopixelbus
-    type: GRBW
-    variant: 800KBPS
-    pin: GPIO19
-    num_leds: 64
-    name: ${friendly_name}
+binary_sensor:
+  - platform: gpio
+    pin:
+      number: GPIO4
+      mode: INPUT_PULLUP
+      inverted: true
+    name: ${friendly_name} Occupied
+    device_class: occupancy

@@ -1,9 +1,9 @@
 ---
 substitutions:
-  device_name: emergency-exit-sign
-  friendly_name: Emergency exit sign
+  device_name: bluetooth-proxy
+  friendly_name: Bluetooth proxy
   project_version: 1.0.0
-  device_description: A fancy emergency exit sign
+  device_description: Proxies nerby bluetooth devices to HO
 
 esphome:
   name: ${device_name}
@@ -14,6 +14,8 @@ esphome:
 
 esp32:
   board: nodemcu-32s
+  framework:
+    type: esp-idf
 
 wifi:
   ssid: !secret wifi_ssid
@@ -34,21 +36,5 @@ ota:
   platform: esphome
   password: !secret ota_password
 
-web_server:
-  port: 80
-  auth:
-    username: esphome
-    password: !secret web_password
-
-light:
-  # - platform: fastled_clockless
-  #   chipset: NEOPIXEL
-  #   pin: GPIO19
-  #   num_leds: 64
-  #   name: ${friendly_name}
-  - platform: neopixelbus
-    type: GRBW
-    variant: 800KBPS
-    pin: GPIO19
-    num_leds: 64
-    name: ${friendly_name}
+bluetooth_proxy:
+  active: true

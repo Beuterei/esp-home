@@ -1,9 +1,9 @@
 ---
 substitutions:
-  device_name: emergency-exit-sign
-  friendly_name: Emergency exit sign
+  device_name: treehouse-light
+  friendly_name: Treehouse Light
   project_version: 1.0.0
-  device_description: A fancy emergency exit sign
+  device_description: Relay to control my lego treehouse lights
 
 esphome:
   name: ${device_name}
@@ -40,15 +40,12 @@ web_server:
     username: esphome
     password: !secret web_password
 
+output:
+  - platform: gpio
+    pin: GPIO16
+    id: relay
+
 light:
-  # - platform: fastled_clockless
-  #   chipset: NEOPIXEL
-  #   pin: GPIO19
-  #   num_leds: 64
-  #   name: ${friendly_name}
-  - platform: neopixelbus
-    type: GRBW
-    variant: 800KBPS
-    pin: GPIO19
-    num_leds: 64
+  - platform: binary
     name: ${friendly_name}
+    output: relay

@@ -51,12 +51,26 @@ To configure secrets
 
 ## Projects
 
-| Name                  | Description                                      |
-| --------------------- | ------------------------------------------------ |
-| `emergency-exit-sign` | A fancy emergency exit sign as light             |
-| `dnd-light-remote`    | A small remote to control the light mood for dnd |
-| `door-buzzer`         | Relay to control my door buzzer                  |
-| `water-tracker`       | A tracker for my daily water consumption         |
+| Name                    | Description                                      |
+| ----------------------- | ------------------------------------------------ |
+| `bed-tracker`           | Bed occupancy sensor                             |
+| `bedroom-plant-station` | A plant watering station for the bedroom         |
+| `bluetooth-proxy`       | Proxies nearby bluetooth devices to HO           |
+| `dnd-light-remote`      | A small remote to control the light mood for dnd |
+| `door-buzzer`           | Relay to control my door buzzer                  |
+| `emergency-exit-sign`   | A fancy emergency exit sign as light             |
+| `treehouse-light`       | Relay to control my lego treehouse lights        |
+| `water-tracker`         | A tracker for my daily water consumption         |
+
+## TODO
+
+- [ ] Migrate remaining configs to ESP-IDF framework:
+  - [ ] `bedroom-plant-station`
+  - [ ] `dnd-light-remote`
+  - [ ] `door-buzzer`
+  - [ ] `emergency-exit-sign`
+  - [ ] `treehouse-light`
+  - [ ] `water-tracker`
 
 <!-- MARKDOWN LINKS & IMAGES -->
 <!-- https://www.markdownguide.org/basic-syntax/#reference-style-links -->
